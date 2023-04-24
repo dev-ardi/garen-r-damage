@@ -73,6 +73,17 @@ export default function Home() {
 			<div className={`p-14 ${inter.className}`}>
 				<div className="grid grid-cols-2 gap-3">{items}</div>
 			</div>
+      <footer className="footer p-10 bg-neutral text-neutral-content">
+  <div className="flex flex-row space-x-8">
+    <a href="https://github.com/dev-ardi/garen-r-damage" className="footer-title">Contribute to this page</a> 
+    <a href="https://twitter.com/dev_ardi" className="footer-title fill-current">Twitter
+    <img src="/twitter.png" className="inline-block w-4 h-4 ml-2" />
+    </a>
+    <a href="https://dev.to/devardi" className="footer-title fill-current">My blog</a>
+    <a href="mailto:ardi@ardi.dev" className="footer-title fill-current">Contact me</a>
+  </div>
+
+</footer>
 		</main>
 	);
 }
