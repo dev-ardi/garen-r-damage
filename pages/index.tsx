@@ -17,10 +17,9 @@ export default function Home() {
 
 	return (
 		<main className="bg-slate-950">
-			<div className="flex items-center flex-col justify-center p-6 ">
-				<p className="font-bold text-6xl">
-					{" "}
-					Garen R damage calculator{" "}
+			<div className="flex items-center flex-col justify-center p-6 text-white ">
+				<p className="font-bold text-6xl ">
+					Garen R damage calculator
 				</p>
 				<div className="flex items-center justify-center mt-5 space-x-4">
 					<button
@@ -67,7 +66,7 @@ export default function Home() {
 						</svg>
 					</button>
 
-					<p>Percentage HP at which executes</p>
+					<p>Percentage HP at which it executes</p>
 				</div>
 			</div>
 
