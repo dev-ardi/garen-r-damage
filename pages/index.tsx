@@ -44,7 +44,7 @@ export default function Home() {
 							/>
 						</svg>
 					</button>
-					<p>Execute HP</p>
+					<p>HP at which it executes</p>
 					<button
 						className="btn btn-square"
 						onClick={() => {
@@ -67,11 +67,13 @@ export default function Home() {
 						</svg>
 					</button>
 
-					<p>Percentage execute</p>
+					<p>Percentage HP at which executes</p>
 				</div>
 			</div>
-			<div className={`p-14 ${inter.className}`}>
-				<div className="grid grid-cols-2 gap-3">{items}</div>
+
+
+			<div className={`md:p-14 p-6  ${inter.className}`}>
+				<div className="grid grid-cols-1 md:grid-cols-2 gap-3">{items}</div>
 			</div>
       <footer className="footer p-10 bg-neutral text-neutral-content">
   <div className="flex flex-row space-x-8">
@@ -92,17 +94,17 @@ function RDamage({ hp, percent }: { hp: number; percent: boolean }) {
 	const func = percent ? execPercent : execHp;
 
 	return (
-		<div className="grid grid-cols-4 text-black gap-1  bg-gray-800">
-			<h2 className="flex items-center justify-center text-3xl font-bold text-white">
+		<div className="grid grid-cols-4 text-black gap-1  bg-gray-800 rounded-md">
+			<h2 className="flex items-center justify-center  md:text-3xl text-2xl font-bold text-white  rounded-lg">
 				{hp}
 			</h2>
-			<h3 className="flex items-center justify-center p-2 text-2xl bg-green-400">
+			<h3 className="flex items-center justify-center p-1 text-2xl bg-green-400 ">
 				{func(hp, 1)}
 			</h3>
-			<h3 className="flex items-center justify-center p-2 text-2xl bg-yellow-400">
+			<h3 className="flex items-center justify-center p-2 text-2xl bg-yellow-400 ">
 				{func(hp, 2)}
 			</h3>
-			<h3 className="flex items-center justify-center p-1 text-2xl bg-red-400">
+			<h3 className="flex items-center justify-center p-1 text-2xl bg-red-400 rounded-r-lg">
 				{func(hp, 3)}
 			</h3>
 		</div>
